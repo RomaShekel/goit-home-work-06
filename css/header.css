@@ -1,0 +1,232 @@
+
+.header {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
+
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-social-icon {
+    display: none;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: var(--ocean, #404bbf);
+}
+
+.address.link:hover,
+.address.link:focus {
+    color: var(--ocean, #404bbf);
+}
+
+@media screen and (max-width: 767px) {
+    
+.navigation {
+   display: none;
+}
+
+.address {
+    display: none;
+}
+
+.mobile-menu .navigation {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-bottom: 168px;
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.0.2em;
+    text-transform: capitalize;
+}
+
+.mobile-menu .address {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 16px;
+    color: var(--SLATE, #434455);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu .header-social-icon {
+    display: flex;
+    padding-top: 48px;
+}
+
+.social-networks-icon-list-header {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+
+
+}
+}
+
+.upper-logo {
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+}
+
+.upper-span {
+    color: #2e2f42 ;
+}
+
+.mobile-header-button-icon {
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    padding: 0;
+}
+
+.mobile-header-icon {
+    fill: var(--common-black, #2F2F37);
+    
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    z-index: 42;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .mobile-header-button-icon {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .address {
+        display: flex;
+    }
+    .nav {
+        display: flex;
+        align-items: center; 
+    }
+
+    .navigation {
+        display: flex;
+        gap: 40px;
+        color: var(--navyblue, #2e2f42);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: var(--SLATE, #434455);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
+    .nav-link-studio {
+        position: relative;
+        color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link-studio::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 48px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+        margin-bottom: -35px;
+    }
+
+    .upper-logo {
+        margin-right: 120px;
+    }
+    
+}
+
+@media screen and (min-width: 1188px) {
+    
+
+
+ .header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: var(--navyblue, #2e2f42);
+    position: relative;
+}
+
+.nav-link-studio::after {
+    margin-bottom: -27px;
+}
+
+.address {
+    flex-direction: row;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+}
+
+

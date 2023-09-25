@@ -1,0 +1,11 @@
+@import './base/global.css';
+@import './base/conteiner.css';
+
+@import './header.css';
+@import './hero.css';
+@import './second-section.css';
+@import './our-team.css';
+@import './our-portfolio.css';
+@import './footer.css';
+@import './modal.css';
+

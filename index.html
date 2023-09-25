@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>homework</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
         <nav class="nav">
             <a class="upper-logo link" href="./index.html">Web<span class="upper-span">Studio</span></a>
 
-
+            
             <ul class="navigation">
 
                 <li class="nav-list"><a class="nav-link link nav-link-studio" href="./index.html">Studio</a></li>
@@ -42,16 +42,54 @@
             
              </ul>
         </address>
+
+        <div class="header-social-icon">
+        <ul class="social-networks-icon-list-footer">
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-instagram"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-twitter"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-facebook"></use>
+                </svg>
+               </a>
+            </li>
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-linkedin"></use>
+                </svg>
+                </a>
+           </li>
+           </ul>
+        </div>
+           <button class="mobile-header-button-icon" type="button">
+            <svg class="mobile-header-icon" width="24" height="24">
+                <use href="./images/icon/icons.svg#icon-menu-mobile"></use>
+            </svg>
+        </button>
         </div>
     </header>
 
 
     <main>
-        <section class="main-section">
-            <div class="main-section-div container">
+        <section class="hero-section">
+            <div class="hero-section-div container">
 
-            <h1 class="main-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="button">Order Service</button>
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            <button class="hero-button" type="button">Order Service</button>
         
         </div>
         </section>
@@ -62,7 +100,7 @@
             <h2 class="visually-hidden">section</h2>
 
             
-            <ul class="second-section-list">
+             <ul class="second-section-list">
                 <li class="second-section-list-item">
                     <div class="icon-div">
                     <svg class="second-section-icon-svg" width="64" height="64">
@@ -111,7 +149,7 @@
             </ul>
 
             </div>
-        </section>
+        </section> 
 
         <section class="our-team">
             <div class="our-team-div container">
@@ -121,7 +159,7 @@
 
             <ul class="team-list">
                 <li class="team-list-item">
-                    <img src="./images/img_product_designer.jpg" alt="product-designer" width="264" />
+                    <img src="./images/img_product_designer.jpg" srcset="./images/img_product_designer@2x.jpg 2x" alt="product-designer" width="264" />
                     <div class="div-team-member-and-post">
                         <h3 class="team-member">Mark Guerrero</h3>
                         <p class="post">Product Designer</p>
@@ -162,7 +200,7 @@
                     </div>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/img_frontend_developer.jpg" alt="frontend-developer" width="264" />
+                    <img src="./images/img_frontend_developer.jpg" srcset="./images/img_frontend_developer@2x.jpg 2x" alt="frontend-developer" width="264" />
                     <div class="div-team-member-and-post">
                         <h3 class="team-member">Tom Ford</h3>
                         <p class="post">Frontend Developer</p>
@@ -203,7 +241,7 @@
                     </div>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/img_marketing.jpg" alt="marketing" width="264" />
+                    <img src="./images/img_marketing.jpg" srcset="./images/img_marketing@2x.jpg 2x" alt="marketing" width="264" />
                    <div class="div-team-member-and-post">
                         <h3 class="team-member">Camila Garcia</h3>
                         <p class="post">Marketing</p>
@@ -244,7 +282,7 @@
                     </div>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/img_ui_designer.jpg" alt="ui-designer" width="264" />
+                    <img src="./images/img_ui_designer.jpg" srcset="./images/img_ui_designer@2x.jpg 2x" alt="ui-designer" width="264" />
                     <div class="div-team-member-and-post">
                         <h3 class="team-member">Daniel Wilson</h3>
                         <p class="post">UI Designer</p>
@@ -287,7 +325,7 @@
             </ul>
 
             </div>
-        </section> 
+        </section>  
         
  <section class="our-portfolio">
     <div class="our-portfolio-div container">
@@ -298,7 +336,16 @@
     <ul class="our-portfolio-list">
         <li class="our-portfolio-list-item">
           <div class="our-portfolio-img-div">
-            <img class="our-portfolio-img" src="./images/img_banking_app.jpg" alt="banking-app"
+            <img class="our-portfolio-img"
+                srcset="./images/img_banking_app.jpg 360w,
+                     ./images/img_banking_app@2x.jpg 720w,
+                     ./images/img-tablet/bancking-app-mobile.jpg 356w,
+                     ./images/img-tablet/bancking-app-mobile@2x.jpg 712w,
+                     ./images/bancking-app-mobile.jpg 288w,
+                     ./images/bancking-app-mobile@2x.jpg 576w " 
+                     sizes="(min-width: 1188px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                     src="./images/img_banking_app"
+                alt="banking-app"
                 width="360"
                 height="300" />
                     <p class="overlay">
@@ -312,7 +359,15 @@
         </li>
         <li class="our-portfolio-list-item">
             <div class="our-portfolio-img-div">
-                <img class="our-portfolio-img" src="./images/img_cashless_payment.jpg" alt="cahless-payment"
+                <img class="our-portfolio-img"
+                srcset="./images/img_cashless_payment.jpg 360w,
+                ./images/img_cashless_payment@2x.jpg 720w,
+                ./images/img-tablet/cashless_payment-mobile.jpg 356w,
+                ./images/img-tablet/cashless_payment-mobile@2x.jpg 712w,
+                ./images/img-mobile/cashless_payment-mobile.jpg 288w,
+                ./images/img-mobile/cashless_payment@2x.jpg 576w" 
+                sizes="(min-width: 1188px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                src="./images/img_cashless_payment.jpg" alt="cahless-payment"
                 width="360"
                 height="300" />
                     <p class="overlay">
@@ -388,7 +443,7 @@
 
 
 
-    <footer class="footer">
+     <footer class="footer">
         <div class="footer-div container">
             <div class="footer-logo-and-text-div">
         <a class="lower-logo link" href="./index.html">Web<span class="lower-span">Studio</span>
@@ -454,7 +509,7 @@
     </footer>
 
     <!------------------MODAL WINDOW----------------->
-    <div class="backdrop is-open">
+    <div class="backdrop">
     <div class="modal">
         <button class="close-btn" type="button">
             <svg class="close-icon" width="8" height="8">
@@ -514,6 +569,71 @@
                 <button class="reviev-form-submit-button" type="submit">Send</button>
 
             </form>
+        </div>
+    </div>               
+
+
+    <!-------------MOBILE MENU--------------->
+    <div class="mobile-menu">
+        <button class="close-btn" type="button">
+            <svg class="close-icon" width="8" height="8">
+                <use href="./images/icon/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <nav class="nav">
+
+            
+            <ul class="navigation">
+
+                <li class="nav-list"><a class="nav-link link nav-link-studio" href="./index.html">Studio</a></li>
+                <li class="nav-list"><a class="nav-link link" href="#">Portfolio</a></li>
+                <li class="nav-list"><a class="nav-link link" href="#">Contacts</a></li>
+
+            </ul>
+        </nav>
+        <address class="address">
+            
+
+              <ul class="address">
+            
+                <li><a class="address link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="address link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            
+             </ul>
+        </address>
+
+        <div class="header-social-icon">
+        <ul class="social-networks-icon-list-header">
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-instagram"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-twitter"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-facebook"></use>
+                </svg>
+               </a>
+            </li>
+            <li class="social-networks-icon-list-footer-item">
+                <a href="" class="social-networks-icon-list-footer-item-link link">
+                <svg class="social-networks-icon-footer" width="24" height="24">
+                    <use href="./images/icon/icons.svg#icon-linkedin"></use>
+                </svg>
+                </a>
+           </li>
+           </ul>
         </div>
     </div>
 </body>
