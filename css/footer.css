@@ -219,7 +219,7 @@ header nav {
 
     .footer-div {
          flex-direction: row; 
-         gap: 24px;
+         gap: 72px 24px;
          flex-wrap: wrap;
 
     }
@@ -237,15 +237,22 @@ header nav {
 }
 
 
-@media screen and (min-width: 1188px) {
+@media screen and (min-width: 1158px) {
 
     .conteiner {
         width: 100%;
         max-width: 1158px;
     }
 
+    .footer-div {
+        gap: 0;
+    }
+
+    .footer-logo-and-text-div {
+        margin-right: 120px;
+    }
+
     .social-networks-icon-list-footer-div {
-        margin-right: 56px;
-        margin-left: 56px;
+        margin-right: 80px;
     }
 }

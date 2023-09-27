@@ -1,7 +1,4 @@
 
-.hero-section-div {
-    height: 432px;
-}
 
 .hero-section {
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -10,11 +7,10 @@
     background-position: center;
     background-size: cover;
     padding-bottom: 72px;
+    padding-top: 72px;
 }
 
 .hero-title {
-    padding-top: 72px;
-    padding-bottom: 72px;
     color: var(--WHITE, #FFF);
     text-align: center;
     font-family: Roboto;
@@ -23,6 +19,7 @@
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
 .hero-button {
@@ -52,20 +49,16 @@
         max-width: 496px;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 36px;
+        margin-bottom: 36px;
+        padding-bottom: 0;
     }
 
     .hero-section {
         padding: 112px 0;
     }
-
-    .hero-section-div {
-        height: 436px;
-    }
-    
 }
 
-@media screen and (min-width: 1188px) {
+@media screen and (min-width: 1158px) {
     .hero-title {
         color: var(--white, #FFF);
         font-weight: 700; 
@@ -74,11 +67,7 @@
     }
 
     .hero-section {
-        padding: 120px 0;
-    }
-
-    .hero-section-div {
-        height: 600px;
+        padding: 188px 0;
     }
     
 }
@@ -109,12 +98,8 @@
     padding: 188px 0;
     max-width: 1440px;
 }
-
-
-
-
-
+*/
 .button:hover,
 .button:focus {
     background-color: var(--ocean, #404BBF);
-} */
+}

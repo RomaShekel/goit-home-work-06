@@ -85,7 +85,7 @@
 }
 }
 
-@media screen and (min-width: 1188px) {
+@media screen and (min-width: 1158px) {
 
     .conteiner {
         width: 100%;
@@ -94,7 +94,6 @@
 
     .second-section {
         padding: 120px 0;
-        max-height: 386px;
     }
     .second-section-list-item {
     width: calc((100% - 72px) / 4);
@@ -107,7 +106,7 @@
         gap: 24px;
     }   
     .second-section-title {
-        text-align: center;
+        text-align: start;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;

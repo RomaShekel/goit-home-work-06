@@ -16,6 +16,10 @@
     display: none;
 }
 
+.address {
+    font-style: normal;
+}
+
 .nav a:hover,
 .nav a:focus {
     color: var(--ocean, #404bbf);
@@ -26,66 +30,6 @@
     color: var(--ocean, #404bbf);
 }
 
-@media screen and (max-width: 767px) {
-    
-.navigation {
-   display: none;
-}
-
-.address {
-    display: none;
-}
-
-.mobile-menu .navigation {
-    display: flex;
-    gap: 40px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    padding-top: 72px;
-    padding-left: 16px;
-    padding-bottom: 168px;
-    color: var(--NAVY-BLUE, #2E2F42);
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.0.2em;
-    text-transform: capitalize;
-}
-
-.mobile-menu .address {
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    padding-left: 16px;
-    color: var(--SLATE, #434455);
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu .header-social-icon {
-    display: flex;
-    padding-top: 48px;
-}
-
-.social-networks-icon-list-header {
-    display: flex;
-    gap: 40px;
-    justify-content: space-around;
-
-
-}
-}
-
 .upper-logo {
     color: #4d5ae5;
     font-family: Raleway, sans-serif;
@@ -94,7 +38,6 @@
     line-height: 1.17; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 .upper-span {
@@ -129,6 +72,80 @@
     transform: translateX(0%);
 }
 
+
+@media screen and (max-width: 767px) {
+    
+    .navigation {
+       display: none;
+    }
+
+    .mobile-menu {
+        padding: 72px 24px 40px 16px;
+    }
+    
+    .address {
+        display: none;
+    }
+    
+    .mobile-menu .navigation {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 168px;
+        color:  #2E2F42;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
+    .nav-link.color {
+        color: #2e2f42;
+    }
+
+    .address.link.tel {
+        color: var(--IRIS, #4D5AE5);
+    }
+
+    .nav-link-studio {
+        color: var(--OCEAN, #404BBF);
+    }
+    
+    .mobile-menu .address {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        color:  #434455;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mobile-menu .header-social-icon {
+        display: flex;
+        margin-top: 48px;
+    }
+    
+    .social-networks-icon-list-header {
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+    
+    
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .header {
@@ -152,10 +169,15 @@
         align-items: center; 
     }
 
+    .nav-link.color {
+        color: #2E2F42;
+    }
+
     .navigation {
+        margin-left: 120px;
         display: flex;
         gap: 40px;
-        color: var(--navyblue, #2e2f42);
+        color: #2E2F42;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
@@ -166,7 +188,7 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        color: var(--SLATE, #434455);
+        color: #434455;
         font-size: 12px;
         font-weight: 400;
         line-height: 1.17;
@@ -191,13 +213,9 @@
         margin-bottom: -35px;
     }
 
-    .upper-logo {
-        margin-right: 120px;
-    }
-    
 }
 
-@media screen and (min-width: 1188px) {
+@media screen and (min-width: 1158px) {
     
 
 
@@ -208,8 +226,12 @@
 }
 
 .nav-link {
-    color: var(--navyblue, #2e2f42);
+    color:  #2e2f42;
     position: relative;
+}
+
+.nav-link-studio {
+    color: var(--OCEAN, #404BBF);
 }
 
 .nav-link-studio::after {
@@ -226,6 +248,14 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
+
+    .navigation {
+        margin-left: 0;
+    }
+
+    .upper-logo {
+        margin-right: 76px;
+    }
 
 }
 

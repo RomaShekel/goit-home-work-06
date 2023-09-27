@@ -111,11 +111,16 @@
 }
 
 
-@media screen and (min-width: 1188px) {
+@media screen and (min-width: 1158px) {
 
     .conteiner {
         width: 100%;
         max-width: 1158px;
+    }
+
+    .our-team {
+        padding-bottom: 120px;
+        padding-top: 120px;
     }
 
     .team-list {
